@@ -1,0 +1,14 @@
+1. Syncronous function. --- Works Continiously and stops if the any function in between is taking time to response
+2. Asyncronous function. -- It Works continiously but if any one is left behid it keep the function aside to work and goes to the next function and runs the aside function when it is completed ---Example of Asyncronous functions are setTimeOut and all
+3. Template String. -- in the template string we did'nt have to concatinate the string again and again we have to just write the attaching sting in the given way`${}` isteead of using '+' sign
+4.Arrow Functions --- arrow function are the update version of  simplae functions
+5. Rest Operators --- if the  three dots are written when the function is declared  then it is a rest operator the work of the rest operator is to add the multiple parameters given and ,seperates the string from the parameters 
+                        In Rest Operator the string  and the numbers can be seperated and added
+                        var sum = 0;
+                        const rest =(name,...num)=>{
+                                for(let i in num){
+                                    sum +=num[i]
+                                }
+                                console.log(sum)
+                        }
+6. Spread Operator --- if the three dots are written during the calling of the function then it is called as the spread Operators the work of spread
