@@ -9,17 +9,30 @@
 
 <body>
     <script>
-        let name = "Uzer Qureshi";
-        let course = "Btech";
+        // let name = "Uzer Qureshi";
+        // let course = "Btech";
 
-        const obj = {
-            name,
-            course,
-            tree() {
-                return `My Name is ${this.name}`
+        // const obj = {
+        //     name,
+        //     course,
+        //     tree() {
+        //         return `My Name is ${this.name}`
+        //     }
+        // };
+        // console.log(obj['tree']())
+
+
+        let complete = 7;
+        let prom = new Promise((resolve, reject) => {
+            if (complete > 3) {
+                resolve("It is Greater than 3 ")
             }
-        };
-        console.log(obj['tree']())
+            else {
+                reject("It is lesser than 3")
+            }
+        })
+
+        console.log(prom)
 
     </script>
 </body>
