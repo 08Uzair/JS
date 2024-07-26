@@ -22,17 +22,23 @@
         // console.log(obj['tree']())
 
 
-        let complete = 7;
-        let prom = new Promise((resolve, reject) => {
-            if (complete > 3) {
-                resolve("It is Greater than 3 ")
-            }
-            else {
-                reject("It is lesser than 3")
-            }
-        })
+        // let complete = 7;
+        // let prom = new Promise((resolve, reject) => {
+        //     if (complete > 3) {
+        //         resolve("It is Greater than 3 ")
+        //     }
+        //     else {
+        //         reject("It is lesser than 3")
+        //     }
+        // })
 
-        console.log(prom)
+        // console.log(prom)
+
+        // Fetch Method
+        fetch("https://jsonplaceholder.typicode.com/todos")
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+
 
     </script>
 </body>
