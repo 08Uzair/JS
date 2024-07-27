@@ -35,9 +35,17 @@
         // console.log(prom)
 
         // Fetch Method
-        fetch("https://jsonplaceholder.typicode.com/todos")
-            .then((response) => response.json())
-            .then((json) => console.log(json));
+        // fetch("https://jsonplaceholder.typicode.com/todos")
+        //     .then((response) => response.json())
+        //     .then((json) => console.log(json));
+        try {
+            console.log("first check");
+            console.log("second check");
+        } catch (error) {
+            console.log(`Some error had occured : ${error}`);
+            console.log(error.message)
+            console.log(error.stack)
+        }
 
 
     </script>
